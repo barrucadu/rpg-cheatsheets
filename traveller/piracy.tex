@@ -1,0 +1,423 @@
+\documentclass{cheatsheet}
+
+\begin{document}
+
+\section{Piracy!}
+
+\begin{multicols}{2}
+\begin{emphbox}
+\textbf{Locating a target}\\
+\chrskillcheck{int}{Electronics (Sensors)}, \dice{1d} minutes.
+
+\textbf{Estimating an approximate value of a prize}\\
+\chrskillcheck[Difficult]{int}{Broker}, \dice{1d} seconds.
+
+\textbf{Plotting an intercept course}\\
+\chrskillcheck{edu}{Pilot}, \dice{1d$\times$10} seconds.
+
+\textbf{Demanding surrender}\\
+\diemod{-morale} to attempt.
+
+\textbf{Docking with a crippled target}\\
+\chrskillcheck[Routine]{dex}{Pilot}, \dice{1d} minutes.
+
+\textbf{Setting a breaching charge}\\
+\chrskillcheck{edu}{Explosives}, \dice{1d} minutes.
+
+\textbf{Navigating an unfamiliar ship}\\
+\chrskillcheck{int}{Recon}, \dice{1d} minutes.
+
+\textbf{Finding a hidden safe}\\
+\chrskillcheck[Difficult]{int}{Recon}, \dice{1d} hours.
+
+\textbf{Overriding security systems in a vehicle}\\
+\chrskillcheck[Difficult]{int}{Electronics (computers)}, \dice{1d$\times$10} minutes.
+
+\textbf{Jumping with a stolen vehicle attached to the hull}\\
+\diemod{-2/10 tons of object} to the Engineer (j-drive) check.
+\end{emphbox}
+
+\subsection{Generate a Target}
+
+\begin{enumerate}
+\item Roll on the \textbf{Prey Encounters} table (p14).
+\item Roll on the \textbf{Prey Quirks} table (p19).
+\item Roll on the \textbf{Prey Complications} table (p20).
+\item Determine morale:\\
+  merchant ship, \dice{1d+3}; armed ship, \dice{1d+6}; naval ship, \dice{1d+8}.
+\item Determine encounter distance:\\
+  \dice{3d $\times$ mainworld diameter} (1000km for size 0 worlds).
+\item Determine direction of travel:\\
+  1--3, towards mainworld; 4--5, towards jump limit; 6, other.
+\item Determine how soon the ship could jump (p16).
+\end{enumerate}
+
+Example ships from \textit{High Guard} (HG) and \textit{Ships of the
+  Reach} (SR):
+
+\textbf{Traveller:} Type-S Scout (HG110); Type-J Seeker Mining Ship
+(HG112); Serpent-class Scout (HG114); Asteroid Ship (HG128);
+Hraye-class Scout (SR62); Kteiroa-class Seeker (SR68); or a
+\textbf{Small Freighter}; or an \textbf{Unusual Vessel}; or a
+\textbf{Pirate}.
+
+\textbf{Small Freighter:} Empress Marava-class Far Trader (HG116);
+Type-A2 Far Trader (HG118); Type-A Free Trader (HG120); Type-A3 Fast
+Trader (SR2); Aoa'iw-class Light Trader (SR72).
+
+\textbf{Medium Freighter:} Type-R Subsidised Merchant (HG138);
+Eakhau-class Trader (SR74).
+
+\textbf{Heavy Freighter:} Patrol Tender (SR32); Galoof-class
+Megafreighter (SR48).
+
+\textbf{Liner:} Troop Transport (HG104); Passenger Shuttle (HG106);
+Type-M Subsidised Liner (HG146); Queen Elizabeth-class Liner (SR36);
+Khtukhao-class Clan Transport (SR78).
+
+\textbf{Unusual Vessel:} X-Boat (HG108); Type-K Safari Ship (HG122);
+Type-Y Yacht (HG126); Type-L Lab Ship (HG134); Donosev-class Survey
+Scout (HG140); Type-C Mercenary Cruiser (HG148); Herald-class Fast
+Messenger (SR6); Vulture-class Salvage Hauler (SR21); Magenta-class
+Repair Ship (SR29); Ihateisho-class Scout (SR64); Ktiuhui-class
+Courier (SR66); Iyeliy-class Messenger (SR70); Hkiyrerao-class
+Researcher (SR76); Sakhai-class Assault Transport (SR93).
+
+\textbf{System Defence Boat:} Heavy Fighter (HG102); System Defence
+Boat (TL15: HG124; TL13: HG143); or an \textbf{Escort}; or a
+\textbf{Pirate}.
+
+\textbf{Naval Patrol:} Gazelle-class Close Escort (HG130); Fleet
+Courier (HG132); Crysanthemum-class Destroyer Escort (HG150);
+Fer-de-lance-class Destroyer Escort (HG153); Midu Agasham-class
+Destroyer (HG165); Skimkish-class Light Carrier (HG173);
+Gionetti-class Light Cruiser (HG176); Ghalalk-class Armoured Cruiser
+(HG180); Arakoine-class Strike Cruiser (HG188); Azhanti-class Frontier
+Cruiser (HG192); Atlantic-class Heavy Cruiser (HG196); Wind-class
+Strike Carrier (HG200); Antiama-class Fleet Carrier (HG204);
+Kokirrak-class Dreadnought (HG208); Plankwell-class Dreadnought
+(HG212); Tigeress-class Dreadnought (HG216); Planet-class Heavy
+Cruiser (SR53); Aositaoh-class Cruiser (SR84); Halaheike-class Pocket
+Warship (SR90).
+
+\textbf{Escorts (convoy or naval)}: Type-T Patrol Corvette (HG136);
+Leviathan-class Merchant Cruiser (HG161); P. F. Sloan-class Fleet
+Escort (HG169); Fiery-class Gunship (SR12); Ritchey-class Escort
+(SR44); Ekawsiykua-class Escort (SR82); or a \textbf{Pirate}.
+
+\textbf{Pirates:} Star Ray-class Interceptor (SR4); Indigo-class
+Pirate Carrier (SR8); Buccaneer-class Blockade Runner (SR10); Corsair
+(SR26).
+
+\subsection{Pirate Hunter Response}
+
+When the target signals for help, roll for pirate hunter response:
+
+\begin{tabularx}{\linewidth}{lX} \toprule
+\dice{2d} & Response \\ \midrule
+5- & No response, roll again in an hour. \\
+6, 7 & A vessel launches from the starport. \\
+8, 9 & A vessel launches from the starport or the hundred diameter limit. \\
+10 & A vessel in orbit responds, response time is \dice{1d$+$1} hours. \\
+11 & A vessel in orbit responds, response time is \dice{1d} hours. \\
+12 & A vessel in orbit responds, response time is \dice{1d$\times$10} minutes. \\
+13+ & A vessel in orbit responds, response time is \dice{1d$\times$5} minutes. \\
+\bottomrule
+\end{tabularx}
+
+\textbf{Aslan Hierate:} \diemod{+1}\\
+\textbf{Backwater:} (class E or X starport off a major route) \diemod{-2}\\
+\textbf{Dangerous:} (travel advisory; or law level 3-; or unable to patrol its space) \diemod{-1}\\
+\textbf{High traffic:} (class A or B starport with Ht, Hi, In, Ag, or Ri; or on a major route) \diemod{+1}\\
+\textbf{Secure:} (law level 7+; or a naval base within 6 parsecs) \diemod{+1}\\
+\textbf{Capital:} \diemod{+2}\\
+\textbf{Naval base:} \diemod{+2}
+
+\subsection{Morale}
+
+Reduce morale by 1 for each critical hit and \dice{1d} for each
+critical hit of severity 4+.
+
+If morale reaches 0, the ship jumps out (if possible) or surrenders
+(if not).
+
+\subsection{Looting}
+
+\begin{tabularx}{\linewidth}{Xll} \toprule
+Item & Time Required & Skills Required \\ \midrule
+Supplies & \dice{1d$\times$10} minutes & --- \\
+Cargo (by hand) & \dice{1d} minutes/ton & Athletics \\
+Cargo (by robot) & \dice{1d3} minutes/ton & --- \\
+Cargo (by grappling arm) & 1 minute/ton & Electronics (remote ops) \\
+Treasure (from safe) & \dice{1d} hours & Recon \\
+Treasure (from passengers) & \dice{1d} minutes/passenger & --- \\
+Equipment & \dice{1d} minutes/crewman & --- \\
+Prisoners & \dice{1d} minutes/prisoner & Melee \\
+Vehicles & \dice{1d$\times$10} minutes/vehicle & Electronics (computers), Pilot \\
+What's Not Nailed Down & \dice{1d} hours/100 tons of ship & Athletics, Mechanic \\ \bottomrule
+\end{tabularx}
+
+\textbf{Supplies:} spare parts, food, oxygen, and other immediately
+useful items.
+
+\textbf{Cargo:} a freighter will have \dice{1d$\times$10$+$40\%} of
+its cargo bay filled on average: half will be goods from the world it
+has come from, or is going to, or which sell well in the Imperium or
+Hierate (see below); the other half are random trade goods in 20-ton
+lots.
+
+\textbf{Treasure:} cash, previous metals, gems, jewellery, and other
+easily sellable items which do not need to be fenced.  The ship's safe
+will have Cr20,000/100 tons of ship.  Passengers have: Cr10,000/high,
+Cr5000/mid, Cr1000/low.
+
+\textbf{Equipment:} personal items such as weapons, armour, and
+computers, which must be fenced.  Cr1000/crewman.
+
+\textbf{Prisoners:} what it sounds like.
+
+\textbf{Vehicles:} boats, launches, shuttles (etc) which must be
+fenced.
+
+\textbf{What's Not Nailed Down:} fully stripping the ship of all
+easily transportable items, yielding 10 tons of spare parts per 100
+tons of ship (only worth Cr5000 each), and all the ship's fuel.
+
+\begin{tabularx}{\linewidth}{lXX} \toprule
+\dice{2d} & Imperium -- Hierate & Hierate -- Imperium \\
+2 & Advanced Weapons & Radioactives \\
+3 & Live Animals & Uncommon Ore \\
+4 & Luxury Goods & Luxury Goods \\
+5 & Luxury Consumables & Luxury Consumables \\
+6 & Spices & Textiles \\
+7 & Basic Manufactured Goods & Raw Basic Raw Materials \\
+8 & Biochemicals & Polymers \\
+9 & Pharmaceuticals & Crystals \& Gems \\
+10 & Advanced Manufactured Goods & Uncommon Raw Materials \\
+11 & Advanced Machine Parts & Precious Metals \\
+12 & Illegal Luxuries & Illegal Weapons \\ \bottomrule
+\end{tabularx}
+\end{multicols}
+
+\begin{multicols}{2}
+\section{Piracy Response Indicator (PRI)}
+\begin{tabularx}{\linewidth}{lX} \toprule
+\dice{2d + pri} & Action \\ \midrule
+2, 3 & Vague statement.  \textsc{pri} +1. \\
+4, 5 & Cr\dice{2d$\times$2000} bounty on ``any proven pirate'' alive or lawfully killed.  \textsc{pri} +1. \\
+6, 7 & Cr\dice{2d$\times$5000} bounty on ``any proven pirate'' alive or lawfully killed.  \textsc{pri} +1. \\
+8, 9 & Loud condemnation.  Intelligence agents start pirate hunting.  \textsc{pri} +\dice{d3}. \\
+10, 11 & One small warship (eg, a patrol corvette) sent to hunt pirates for \dice{2d} months.  \textsc{pri} +\dice{d3}. \\
+12, 13 & Ships totalling \dice{2d$\times$100} tons assigned to hunt pirates for \dice{4d} months.  \textsc{pri} +\dice{d3}. \\
+14, 15 & Ships totalling \dice{2d$\times$200} tons assigned to hunt pirates for \dice{4d} months.  \textsc{pri} +\dice{d3}. \\
+16+ & Ships totalling \dice{2d$\times$500} tons assigned to hunt pirates for \dice{4d} months.  Nearby world becomes enemy of the pirates and their known accomplices, and petitions the Imperium or other nearby worlds to mount a larger response.  \textsc{pri} +\dice{d}. \\ \bottomrule
+\end{tabularx}
+
+Piracy Response Indicator (\textsc{pri}) measures how concerned the
+local worlds are, and starts at 0.
+
+When the travellers make a strike, roll \dice{2d + pri} and consult
+the actions table (above) on 12+, with the below modifiers:
+
+\begin{tabularx}{\linewidth}{Xl} \toprule
+Circumstance & \textsc{dm} \\ \midrule
+Class A starport & +6 \\
+Class B starport & +4 \\
+Class C starport & +2 \\
+Class D starport & +0 \\
+Class E starport & -2 \\
+Class X starport & -4 \\
+``Polite'', nobody harmed, only cargo taken & -4 \\
+Minimal force used, only cargo taken & -2 \\
+Little force used, only nonessential items and cargo taken leaving the ship serviceable & -1 \\
+Typical ``cargo raid'': some violence and threats & +0 \\
+Modestly violent raid, or personal items and important components taken leaving the ship badly damaged & +1 \\
+Violent raid, or ship or hostages taken, or disregard for life shown & +2 \\
+Significant casualties caused, ship and/or hostages taken & +4 \\
+Appallingly violent or callous actions & +6 \\
+Atrocity, such as use of nerve gas against passengers & +8 \\
+Allied agent in place downplaying the incident & -2 \\
+Pirates have a reputation as ``good guys'' or being justified in their actions & -1 to -4 \\
+Pirates have a reputation for violence and destruction & +2 \\
+Pirates have an extremely bad reputation & +4 \\ \bottomrule
+\end{tabularx}
+
+\textbf{Reducing PRI:}
+
+\begin{itemize}
+\item Waiting \dice{2d} weeks reduces \textsc{pri} by 1.
+\item Making a strike at least 6 parsecs away from the previous one
+  reduces \textsc{pri} by \dice{d3}, on a roll of 12+ with \dice{2d +
+    parsecs}.
+\item Framing other pirates reduces \textsc{pri} by 1 immediately and
+  again every \dice{d3} weeks, on a roll of 12+ with \dice{2d + 1} per
+  100 tons of other pirate vessels captured or destroyed.
+\end{itemize}
+
+\vfill\columnbreak
+\section{Standing}
+
+\begin{tabularx}{\linewidth}{lX} \toprule
+Standing & Effect \\ \midrule
+20+ & All ports belonging to the power are Friendly, and the pirates gain \textsc{soc+2} within the power's territory. \\
+6 to 19 & All ports belonging to the power are Tolerant. \\
+-5 to 5 & No effect. \\
+-20 to -6 & A bounty of Cr\dice{1000$\times$1d$\times -$standing} is placed on the pirates. \\
+-40 to -21 & A patrol is dispatched to hunt down pirates in the region. \\
+-40- & Assassins, naval ships, and other imperial agents are dispatched, and the attitude of all ports belonging to the power which are not already Friendly or better drop by 1 level. \\ \bottomrule
+\end{tabularx}
+
+Standing with the Imperium starts at 0.  Standing with the Aslan
+Hierate starts at -5.  These are modified like so:
+
+\textbf{Stealing Cargo:} -1 per incident in which more than Cr100,000
+is stolen.
+
+\textbf{Infamous Incidents:} \dice{-1d} per incident where the pirates
+steal a large amount of cargo, capture ships, and otherwise rock the
+boat.
+
+\textbf{Atrocities:} \dice{-1d} per incident where the pirates destroy
+ships, murder prisoners, or otherwise breach the code of the stars.
+
+\textbf{Interference:} \dice{-1d} per incident where the pirates
+attack imperial scouts, couriers, or convoys; damage starports or
+refuelling stations; or otherwise interfere with the flow of trade.
+
+\textbf{Heroic Deeds:} \dice{+1d} for attacking pirates or inflicting
+significant damage on the other imperial power.
+
+\textbf{Per Month Without Incident:} standing moves 1 point towards
+its starting value for each month in which the pirates do nothing of
+consequence
+
+\end{multicols}
+
+\section{Operational Considerations}
+\begin{multicols}{2}
+\subsection{Refuelling Times}
+
+\begin{tabularx}{\linewidth}{lX} \toprule
+Method & Fuel per Hour \\ \midrule
+Starport (Class A--C) & 50 tons/FTU \\
+Starport (Class D) & 25 tons/FTU \\
+UNREP System & 20 tons/ton of UNREP system \\
+Gas Giant Skimming & Variable \\
+Liquid Water & \dice{3d3} tons/FTU \\
+Ice Deposits & \dice{1d} tons/FTU \\
+Sparse Ice Deposits & \dice{d3} tons/FTU \\ \bottomrule
+\end{tabularx}
+
+Each full 25 tons of fuel tankage gives 1 point of FTU.
+
+\subsection{Stealing Ships}
+
+\begin{tabularx}{\linewidth}{Xll} \toprule
+Measure & Time Required (PWH) & Skills Required \\ \midrule
+Gut a ship of security devices & \dice{1d}/10 tons of hull & Engineer or Mechanic 1 \\
+Replace a ship's security devices & \dice{2d}/10 tons of hull & Engineer or Mechanic 2 \\ \bottomrule
+\end{tabularx}
+
+A ship with an active security system cannot be flown by unauthorised
+personnel.
+
+A ship gutted of security devices is obvious to any maintenance
+worker, and also easy to steal as anyone can fly it.
+
+\textbf{Gutting a ship of security devices:} after doing so, make a
+\chrskillcheck[Difficult]{edu}{Engineer or Mechanic}.  On failure,
+some devices remain and will reactivate at some point.
+
+\textbf{Fit-and-replace Units:} small robots which generate \dice{1d}
+PWH per point of Effect of a \chrskillcheck[Routine]{edu}{Electronics
+  (remote ops)} per hour.
+
+\textbf{Person Work Hours (PWH):} 0 if unskilled, otherwise 1 + level$\div$4.
+
+\subsection{Transferring Cargo in Zero-G}
+
+\begin{emphbox}
+\textbf{Launching a cargo container to another ship in zero-g}\\
+\chrskillcheck[Difficult]{str}{Vacc Suit} (by hand).\\
+\chrskillcheck[Difficult]{dex}{Mechanic} (with a cargo crane).\\
+Formidable if target is more than 100m away.
+
+\textbf{Rigging an improvised catch system}\\
+\chrskillcheck[Very Difficult]{int}{Mechanic}, made for each container.
+
+\textbf{Repositioning to catch off-target cargo}\\
+\chrskillcheck[Very Difficult]{dex}{Pilot}, \diemod{+Thrust}.
+\end{emphbox}
+
+Each container transferred by launching it in zero-g collides with the
+target ship and causes damage:
+
+\begin{itemize}
+\item Without a catch system: \dice{1d}
+\item With a catch system which failed: \dice{d3} (ignoring armour)
+\item Off-target and not caught: \dice{Launch Effect + Pilot Effect}
+\end{itemize}
+\end{multicols}
+
+\section{Crew}
+
+\begin{multicols}{2}
+See \textbf{Crewman Names} and \textbf{Crewman Quirks} tables (p11).
+
+\begin{tabularx}{\linewidth}{lXl} \toprule
+Position & Key Skills & Base Salary \\ \midrule
+Pilot & Pilot, Electronics, Tactics (naval) & Cr6000 \\
+Navigator & Astrogation, Electronics & Cr5000 \\
+Engineer & Engineer, Mechanic & Cr4000 \\
+Medic & Medic, Zero-G, Life Science, Steward & Cr4000 \\
+Gunner & Gunner, Mechanic, Electronics & Cr2000 \\
+Marine & Athletics, Gun Combat, Melee, Vacc Suit, Zero-G & Cr2000 \\ \bottomrule
+\end{tabularx}
+
+A \textbf{green recruit} has \diemod{+0} for key skills and \diemod{-2} for other skills.\\
+An \textbf{average crewman} has \diemod{+1} for key skills and \diemod{+0} for other skills.\\
+A \textbf{good pirate} has \diemod{+2} for key skills and \diemod{+1} for other skills.\\
+An \textbf{excellent crewman} has \diemod{+3} for key skills and \diemod{+2} for other skills.\\
+A \textbf{legendary pirate} has \diemod{+4} for key skills and \diemod{+2} for other skills.
+
+\subsection{Morale}
+
+Crew morale starts at \dice{1d$+$6}, and provides a \diemod{} like
+other characteristics.
+
+Make a \chrcheck{mor} when:
+
+\begin{itemize}
+\item The ship is seriously endangered
+\item The crew are ordered to risk their lives
+\item The crew have to endure undue hardship
+\item The captain and leadership are divided or indecisive
+\end{itemize}
+
+\textbf{Damage:} a failed \chrcheck{mor} reduces morale by \dice{1d}.
+Also reduce morale by 1 when:
+
+\begin{itemize}
+\item A month goes by without a division of the spoils.
+\item A raid, attempt to capture cargo, or other mission fails.
+\end{itemize}
+
+\textbf{Recovery:} increase morale by 1 when:
+
+\begin{itemize}
+\item A mission with a considerable payoff is successful.
+\item The crew are given shore leave and other pleasures.
+\end{itemize}
+
+\subsection{Dividing the Spoils}
+
+King Oleb gets 10\% first.  Then, give each ordinary crewman 1 share
+each (good, excellent, or legendary crewmen may have additional
+shares), give the Travellers 2 shares each, and give the captain an
+additional 5 shares.  Then divide the spoils by the shares.
+
+For each crewman, make a \chrcheck[Routine]{mor}.  On failure, they
+leave at the next Tolerant (or better) port.
+\end{multicols}
+
+\end{document}
